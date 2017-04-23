@@ -31,7 +31,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 			<?php get_template_part( 'global-templates/left-sidebar-check', 'none' ); ?>
 
 			<main class="site-main" id="main">
-
+				
 				<?php if ( have_posts() ) : ?>
 
 					<?php /* Start the Loop */ ?>
@@ -72,7 +72,7 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 	</div><!-- .row -->
 
-</div><!-- Container end -->
+</div><!-- Container end --> 
 
 </div><!-- Wrapper end -->
 

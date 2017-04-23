@@ -26,7 +26,38 @@ $container = get_theme_mod( 'understrap_container_type' );
 <body <?php body_class(); ?>>
 
 <div class="hfeed site" id="page">
+    <div class="toplinks row">
+	<div class="toplinksleft col-sm-6">
+		<a href=''>Help</a>
+		<a href=''>Contact</a>
+		<a href=''>Delivery information</a>
+	</div>
+    <div class="toplinksright col-sm-6">
+        <a href=''>Call US 555-555-555</a>
+    </div>
+    </div>
+    <div class="container">
 
+        <div class="row">
+            <div class="col-sm-6" style="background-color:lavender;">Greetong</div>
+            <div class="col-sm-6" style="background-color:lavenderblush;">
+
+                <a href="<?php echo esc_url(home_url('/wp-login.php')); ?>" rel="dogs">Login</a>
+                <a href="<?php echo esc_url(home_url('/register.php')); ?>" rel="dogs">Register</a>
+
+                    <a class="cart-content" href="<?php echo WC()->cart->get_cart_url(); ?>" title="Посмотреть корзину">
+                        <i class="fa fa-shopping-bag" aria-hidden="true"></i> My cart:
+                        (<?php echo WC()->cart->get_cart_contents_count(); ?>):
+                        <?php echo WC()->cart->get_cart_total(); ?>
+                    </a>
+
+
+                <?php get_product_search_form() ?>
+
+            </div>
+
+        </div>
+    </div>
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 

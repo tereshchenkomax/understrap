@@ -9226,6 +9226,15 @@ h1.navbar-brand a:hover {
 .gallery-caption {
   display: block; }
 
+.toplinks {
+  background-color: black; }
+
+.toplinks a {
+  color: #e677ff; }
+
+.navbar-brand {
+  display: none; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

@@ -12,12 +12,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <?php get_sidebar( 'footerfull' ); ?>
+<div class="container">
 
 <div class="wrapper" id="wrapper-footer">
 
 	<div class="<?php echo esc_html( $container ); ?>">
 
 		<div class="row">
+
+            <div class="col-sm-6" style="background-color:lavender;">Follow us on</div>
+            <div class="col-sm-4" style="background-color:lavenderblush;"><input type="email" class="form-control" id="email"></div>
+            <div class="col-sm-1"><button type="button" class="btn">Join</button></div>
 
 			<div class="col-md-12">
 
